@@ -27,4 +27,6 @@ def main():
     score = 0
     points = pygame.sprite.Group()
 
+    #Timer for spawning points
+    SPAWN_EVENT = pygame.USEREVENT + 1
     
