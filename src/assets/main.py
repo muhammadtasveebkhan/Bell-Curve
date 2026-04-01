@@ -42,4 +42,7 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
             if event.type == SPAWN_EVENT:
-                new_point = DataPoi    
+                new_point = DataPoint(SCREEN_WIDTH)
+                points.add(new_point)
+                
+                    
