@@ -56,6 +56,8 @@ def main():
 
         points.draw(screen)
         pygame.display.flip()
+        clock.tick(60)
+
         
 
                     
