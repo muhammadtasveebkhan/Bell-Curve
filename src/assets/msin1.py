@@ -4,7 +4,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((1280, 720))
 clock = pygame.time.Clock()
-
+running = True
 
 def main(running):
     while running:
@@ -24,10 +24,10 @@ def main(running):
 
         clock.tick(60)  # limits FPS to 60
 
-pygame.quit()
+    pygame.quit()
 
-if __name__ == "__name__":
-    main(running = True)       
+# if __name__ == "__name__":
+main(True)       
 
 # Example file showing a basic pygame "game loop"
 
