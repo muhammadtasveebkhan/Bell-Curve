@@ -46,15 +46,15 @@ def main():
             #     points.add(new_point)
 
         # 2. Update Points
-        points.update()
+        # points.update()
 
-        # 3. Game Logic: Catching points
-        for point in points:
-            # If player clicks the point 
-            # The twist logic goes here
-            pass
+        # # 3. Game Logic: Catching points
+        # for point in points:
+        #     # If player clicks the point 
+        #     # The twist logic goes here
+        #     pass
 
-        points.draw(screen)
+        # points.draw(screen)
         pygame.display.flip()
         clock.tick(60)
 
