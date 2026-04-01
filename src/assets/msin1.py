@@ -1,39 +1,13 @@
 import pygame
-import os 
-import random
-from sprites import DataPoint
-
-# # Project Path Logic 
-GAME_PATH = os.path.dirname(os.path.abspath(__file__))
-
-def get_asset_path(filename:str) -> str:
-    return os.path.join(GAME_PATH,"assets", filename)
-
-#Initializing Pygame
 pygame.init()
+
 screen = pygame.display.set_mode((1280, 720))
-pygame.display.set_caption("Bell Curve Catcher")
 clock = pygame.time.Clock()
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
-# screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
-
-
-
-#Colors
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GRAY = (200, 200, 200)
+running = True
 
 def main():
     # Example file showing a basic pygame "game loop"
-    import pygame
-
-    # pygame setup
-    pygame.init()
-    screen = pygame.display.set_mode((1280, 720))
-    clock = pygame.time.Clock()
-    running = True
+   
 
     while running:
         # poll for events
