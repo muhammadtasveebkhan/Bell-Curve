@@ -54,5 +54,7 @@ def main():
             # The twist logic goes here
             pass
 
-        points.draw  
+        points.draw(screen)
+        pygame.display.flip()
+         
                     
