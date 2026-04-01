@@ -34,4 +34,5 @@ def main():
     while running:
         screen.fill(WHITE)
 
-        
+        # 1. Draw the "Safe Zone" (The Bell Curve Area)
+        # 2. For now, let's represent thr
