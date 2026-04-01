@@ -10,4 +10,5 @@ def get_asset_path(filename:str) -> str:
     return os.path.join(GAME_PATH,"assets", filename)
 
 #Initializing Pygame
+pygame.init()
 
