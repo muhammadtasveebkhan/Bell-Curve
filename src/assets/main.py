@@ -11,4 +11,6 @@ def get_asset_path(filename:str) -> str:
 
 #Initializing Pygame
 pygame.init()
-
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+screen = pygame.display.set_mode(S)
