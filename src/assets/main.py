@@ -29,4 +29,9 @@ def main():
 
     #Timer for spawning points
     SPAWN_EVENT = pygame.USEREVENT + 1
-    
+    pygame.time.set_timer(SPAWN_EVENT, 1000)
+
+    while running:
+        screen.fill(WHITE)
+
+        
