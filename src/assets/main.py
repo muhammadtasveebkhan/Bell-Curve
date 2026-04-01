@@ -32,7 +32,7 @@ def main():
     pygame.time.set_timer(SPAWN_EVENT, 1000)
 
     while running:
-        screen.fill(WHITE)
+        # screen.fill(WHITE)
 
         # 1. Draw the "Safe Zone" (The Bell Curve Area)
         # For now, let's represent the "Safe" center of the curve
