@@ -3,11 +3,11 @@ import os
 import random
 from sprites import DataPoint
 
-# Project Path Logic 
-GAME_PATH = os.path.dirname(os.path.abspath(__file__))
+# # Project Path Logic 
+# GAME_PATH = os.path.dirname(os.path.abspath(__file__))
 
-def get_asset_path(filename:str) -> str:
-    return os.path.join(GAME_PATH,"assets", filename)
+# def get_asset_path(filename:str) -> str:
+#     return os.path.join(GAME_PATH,"assets", filename)
 
 #Initializing Pygame
 pygame.init()
@@ -41,9 +41,9 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            if event.type == SPAWN_EVENT:
-                new_point = DataPoint(SCREEN_WIDTH)
-                points.add(new_point)
+            # if event.type == SPAWN_EVENT:
+            #     new_point = DataPoint(SCREEN_WIDTH)
+            #     points.add(new_point)
 
         # 2. Update Points
         points.update()
