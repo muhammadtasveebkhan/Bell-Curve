@@ -12,6 +12,7 @@ def get_asset_path(filename:str) -> str:
 #Initializing Pygame
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
+pygame.display.set_caption("Bell Curve Catcher")
 clock = pygame.time.Clock()
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
