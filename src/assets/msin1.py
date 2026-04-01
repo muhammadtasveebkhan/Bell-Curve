@@ -52,7 +52,7 @@ def main():
 
         clock.tick(60)  # limits FPS to 60
 
-pygame.quit()
+    pygame.quit()
 
 if __name__ == "__name__":
     main()       
