@@ -48,5 +48,11 @@ def main():
         # 2. Update Points
         points.update()
 
-        # 3. Game 
+        # 3. Game Logic: Catching points
+        for point in points:
+            # If player clicks the point 
+            # The twist logic goes here
+            pass
+
+        points.draw  
                     
