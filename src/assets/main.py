@@ -41,9 +41,9 @@ def main():
 #         # For now, let's represent the "Safe" center of the curve
 #         pygame.draw.rect(screen, GRAY, (200, 0, 400, SCREEN_HEIGHT))
 
-#         for event in pygame.event.get():
-#             if event.type == pygame.QUIT:
-#                 running = False
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
 #             if event.type == SPAWN_EVENT:
 #                 new_point = DataPoint(SCREEN_WIDTH)
 #                 points.add(new_point)
