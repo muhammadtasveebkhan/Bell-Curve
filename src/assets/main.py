@@ -25,17 +25,17 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (200, 200, 200)
 
-# def main():
-#     running = True
+def main():
+    running = True
 #     score = 0
 #     points = pygame.sprite.Group()
 
 #     #Timer for spawning points
-#     SPAWN_EVENT = pygame.USEREVENT + 1
+    # SPAWN_EVENT = pygame.USEREVENT + 1
 #     pygame.time.set_timer(SPAWN_EVENT, 1000)
 
-#     while True:
-#         # screen.fill(WHITE)
+    while running:
+        screen.fill(WHITE)
 
 #         # 1. Draw the "Safe Zone" (The Bell Curve Area)
 #         # For now, let's represent the "Safe" center of the curve
@@ -67,11 +67,10 @@ GRAY = (200, 200, 200)
 #     main()       
 
 # Example file showing a basic pygame "game loop"
-import pygame
 
 # pygame setup
 
-running = True
+
 
 while running:
     # poll for events
