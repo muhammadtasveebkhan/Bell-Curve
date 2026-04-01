@@ -41,20 +41,20 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            # if event.type == SPAWN_EVENT:
-            #     new_point = DataPoint(SCREEN_WIDTH)
-            #     points.add(new_point)
+            if event.type == SPAWN_EVENT:
+                new_point = DataPoint(SCREEN_WIDTH)
+                points.add(new_point)
 
         # 2. Update Points
-        # points.update()
+        points.update()
 
         # # 3. Game Logic: Catching points
-        # for point in points:
+        for point in points:
         #     # If player clicks the point 
         #     # The twist logic goes here
-        #     pass
+            pass
 
-        # points.draw(screen)
+        points.draw(screen)
         pygame.display.flip()
         clock.tick(60)
 
