@@ -35,4 +35,5 @@ def main():
         screen.fill(WHITE)
 
         # 1. Draw the "Safe Zone" (The Bell Curve Area)
-        # 2. For now, let's represent thr
+        # 2. For now, let's represent the "Safe" center of the curve
+        pygame.draw
