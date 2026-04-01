@@ -11,11 +11,13 @@ def get_asset_path(filename:str) -> str:
 
 #Initializing Pygame
 pygame.init()
+screen = pygame.display.set_mode((1280, 720))
+clock = pygame.time.Clock()
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
-pygame.display.set_caption("Bell Curve Catcher")
-clock = pygame.time.Clock()
+# screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
+
+
 
 #Colors
 WHITE = (255, 255, 255)
@@ -67,9 +69,7 @@ GRAY = (200, 200, 200)
 import pygame
 
 # pygame setup
-pygame.init()
-screen = pygame.display.set_mode((1280, 720))
-clock = pygame.time.Clock()
+
 running = True
 
 while running:
