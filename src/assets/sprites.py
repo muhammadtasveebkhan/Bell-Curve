@@ -20,4 +20,6 @@ class DataPoint(pygame.sprite.Sprite):
     
     def update(self):
         self.rect.y += self.speed
-                    
+        # Kill if it falls off screen
+        if self.rect.y > 600:
+            self.kill()            
