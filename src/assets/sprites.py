@@ -14,4 +14,6 @@ class DataPoint(pygame.sprite.Sprite):
             self.image.fill((0, 255, 0)) # Green for valid data
 
         self.rect = self.image.get_rect()
-                
+        self.rect.x = random.randint(0, screen_width - 20)
+        self.rect.y = -20
+        self.speed = random.ranint(2, 5)        
