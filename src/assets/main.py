@@ -25,4 +25,6 @@ GRAY = (200, 200, 200)
 def main():
     running = True
     score = 0
-    points = pygame.sprit
+    points = pygame.sprite.Group()
+
+    
