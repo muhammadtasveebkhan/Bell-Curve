@@ -58,6 +58,9 @@ def main():
         pygame.display.flip()
         clock.tick(60)
 
-        
+    pygame.quit()
+
+if __name__ == "__name__":
+    main()       
 
                     
