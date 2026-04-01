@@ -4,7 +4,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((1280, 720))
 clock = pygame.time.Clock()
-running = True
+
 
 def main(running):
     while running:
@@ -27,7 +27,7 @@ def main(running):
 pygame.quit()
 
 if __name__ == "__name__":
-    main()       
+    main(running = True)       
 
 # Example file showing a basic pygame "game loop"
 
