@@ -22,4 +22,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (200, 200, 200)
 
-
+def main():
+    running = True
+    score = 0
+    points = pygame.sprit
