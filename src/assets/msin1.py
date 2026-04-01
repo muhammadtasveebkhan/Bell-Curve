@@ -27,35 +27,35 @@ GRAY = (200, 200, 200)
 
 def main():
     running = True
-#     score = 0
-#     points = pygame.sprite.Group()
+    score = 0
+    points = pygame.sprite.Group()
 
 #     #Timer for spawning points
-    # SPAWN_EVENT = pygame.USEREVENT + 1
-#     pygame.time.set_timer(SPAWN_EVENT, 1000)
+    SPAWN_EVENT = pygame.USEREVENT + 1
+    pygame.time.set_timer(SPAWN_EVENT, 1000)
 
     while running:
         screen.fill(WHITE)
 
-#         # 1. Draw the "Safe Zone" (The Bell Curve Area)
-#         # For now, let's represent the "Safe" center of the curve
-#         pygame.draw.rect(screen, GRAY, (200, 0, 400, SCREEN_HEIGHT))
+        # 1. Draw the "Safe Zone" (The Bell Curve Area)
+        # For now, let's represent the "Safe" center of the curve
+        pygame.draw.rect(screen, GRAY, (200, 0, 400, SCREEN_HEIGHT))
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-#             if event.type == SPAWN_EVENT:
-#                 new_point = DataPoint(SCREEN_WIDTH)
-#                 points.add(new_point)
+            if event.type == SPAWN_EVENT:
+                new_point = DataPoint(SCREEN_WIDTH)
+                points.add(new_point)
 
 #         # 2. Update Points
-#         points.update()
+        points.update()
 
 #         # # 3. Game Logic: Catching points
-#         for point in points:
-#         #     # If player clicks the point 
-#         #     # The twist logic goes here
-#             pass
+        for point in points:
+        #     # If player clicks the point 
+        #     # The twist logic goes here
+            pass
 
 #         points.draw(screen)
         pygame.display.flip()
@@ -63,8 +63,8 @@ def main():
 
     pygame.quit()
 
-# if __name__ == "__name__":
-#     main()       
+if __name__ == "__name__":
+    main()       
 
 # Example file showing a basic pygame "game loop"
 
