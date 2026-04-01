@@ -39,11 +39,11 @@ def main():
         pygame.draw.rect(screen, GRAY, (200, 0, 400, SCREEN_HEIGHT))
 
         for event in pygame.event.get():
-            # if event.type == pygame.QUIT:
-            #     running = False
-            if event.type == SPAWN_EVENT:
-                new_point = DataPoint(SCREEN_WIDTH)
-                points.add(new_point)
+            if event.type == pygame.QUIT:
+                running = False
+            # if event.type == SPAWN_EVENT:
+            #     new_point = DataPoint(SCREEN_WIDTH)
+            #     points.add(new_point)
 
         # 2. Update Points
         points.update()
