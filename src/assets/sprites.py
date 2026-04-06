@@ -11,4 +11,8 @@ class DataPoint(pygame.sprite.Sprite):
         self.image = pygame.Surface((20, 20))
         if self.is_outlier:
             self.image.fill((255, 0, 0)) # Red
-            
+        else:
+            self.image.fill((0, 255, 0)) # Green
+
+        self.rect = self.image.get_rect()
+        
