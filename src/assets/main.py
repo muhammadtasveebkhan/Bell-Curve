@@ -74,18 +74,13 @@ def main():
         clock.tick(60)
 
     pygame.quit()
-            
 
 
 
 
 
 
-# if __name__ == "__name__":
-#     main()       
 
-# Example file showing a basic pygame "game loop"
 
-# pygame setup
-
+=
 
