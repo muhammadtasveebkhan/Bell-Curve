@@ -29,4 +29,12 @@ class Catcher(pygame.sprite.Sprite):
     '''The player-controlled bucket to catch data points.'''
     def __init__(self, screen_width, screen_height):
         super().__init__()
+        self.image = pygame.Surface((100, 40))
+        self.image.fill((0, 0, 255)) # Blue Bucket
+        self.rect = self.image.get_rect()
+        
+        self.rect.centerx = screen_width // 2
+        self.rect.bottom = screen_height - 20
+        self.speed = 12
+        self.screen_width = screen_width
         
