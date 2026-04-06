@@ -1,7 +1,7 @@
 import pygame
 import os 
 import random
-from sprites import DataPoint
+from sprites import DataPoint, Catcher
 
 # # Project Path Logic 
 GAME_PATH = os.path.dirname(os.path.abspath(__file__))
