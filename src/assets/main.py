@@ -26,6 +26,7 @@ def main():
     running = True
     score = 0
     font = pygame.font.SysFont("Arial", 36)
+    
     # Groups
     points_group = pygame.sprite.Group()
     player = Catcher(WIDTH, HEIGHT)
