@@ -29,11 +29,18 @@ def main():
     running = True
     score = 0
     font = pygame.font.SysFont("Arial", 36)
-    
+    # Groups
+    points_group = pygame.sprite.Group()
+    player = Catcher()
+    player_group = pygame.sprite.GroupSingle(player)
 
+    # Timer: Spawn every 800ms (slightly faster)
+    SPAWN_EVENT = pygame.USEREVENT + 1
+    pygame.time.set_timer(SPAWN_EVENT, 800)
 
     while running:
         screen.fill(WHITE)
+
 
 #         # 1. Draw the "Safe Zone" (The Bell Curve Area)
 #         # For now, let's represent the "Safe" center of the curve
