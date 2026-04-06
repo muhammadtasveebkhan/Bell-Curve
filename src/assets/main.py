@@ -27,12 +27,9 @@ GRAY = (200, 200, 200)
 
 def main():
     running = True
-#     score = 0
-#     points = pygame.sprite.Group()
+    score = 0
+    font = pygame.font.SysFont("Arial", 36)
 
-#     #Timer for spawning points
-    # SPAWN_EVENT = pygame.USEREVENT + 1
-#     pygame.time.set_timer(SPAWN_EVENT, 1000)
 
     while running:
         screen.fill(WHITE)
