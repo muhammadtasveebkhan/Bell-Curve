@@ -26,7 +26,7 @@ def main():
     running = True
     score = 0
     font = pygame.font.SysFont("Arial", 36)
-    
+
     # Groups
     points_group = pygame.sprite.Group()
     player = Catcher(WIDTH, HEIGHT)
@@ -44,12 +44,16 @@ def main():
 #         # For now, let's represent the "Safe" center of the curve
 #         pygame.draw.rect(screen, GRAY, (200, 0, 400, SCREEN_HEIGHT))
 
+      # 1. Draw the "Bell Curve" Center (Safe Zone)
+        # 440 to 840 is the middle 400 pixels of a 1280 screen
+        pygame.draw.rect(screen, GRAY, (440, 0, 400, HEIGHT))
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-#             if event.type == SPAWN_EVENT:
-#                 new_point = DataPoint(SCREEN_WIDTH)
-#                 points.add(new_point)
+            if event.type == SPAWN_EVENT:
+                new_point = DataPoint(WIDTH)
+                points_group.add(new_point)
 
 #         # 2. Update Points
 #         points.update()
