@@ -61,16 +61,25 @@ def main():
                 score += 10
             else:
                 score -= 20 # Outliers hurt more!
+
+        # 4. Draw Everything
+        points_group.draw(screen)
+        player_group.draw(screen)
         
-                        
+        # Display Score
+        score_text = font.render(f"Score: {score}", True, (0, 0, 0))
+        screen.blit(score_text, (20, 20))
 
-
-
-#         points.draw(screen)
         pygame.display.flip()
         clock.tick(60)
 
     pygame.quit()
+            
+
+
+
+
+
 
 # if __name__ == "__name__":
 #     main()       
