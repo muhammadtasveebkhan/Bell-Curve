@@ -3,7 +3,7 @@ import os
 import random
 from sprites import DataPoint, Catcher
 
-# # Project Path Logic 
+# # Path Logic for Assets
 GAME_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def get_asset_path(filename:str) -> str:
