@@ -29,6 +29,7 @@ def main():
     running = True
     score = 0
     font = pygame.font.SysFont("Arial", 36)
+    
 
 
     while running:
