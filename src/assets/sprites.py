@@ -38,3 +38,8 @@ class Catcher(pygame.sprite.Sprite):
         self.speed = 12
         self.screen_width = screen_width
         
+    
+
+        # Keep bucket on screen
+        if self.rect.left < 0: self.rect.left = 0
+        if self.rect.right > self.screen_width: self.rect.right = self.screen_width
