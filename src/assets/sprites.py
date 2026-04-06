@@ -15,4 +15,7 @@ class DataPoint(pygame.sprite.Sprite):
             self.image.fill((0, 255, 0)) # Green
 
         self.rect = self.image.get_rect()
+        # Spawn at a random X position at the top
+        self.rect.x = random.randint(0, screen_width - 20)
+        self.rect.y = -20
         
