@@ -18,4 +18,15 @@ class DataPoint(pygame.sprite.Sprite):
         # Spawn at a random X position at the top
         self.rect.x = random.randint(0, screen_width - 20)
         self.rect.y = -20
+        self.speed = random.randint(3, 6)
+
+    def update(self):
+        self.rect.y += self.speed
+        if self.rect.y > 720: # Match the screen height
+            self.kill()
+
+class Catcher(pygame.sprite.Sprite):
+    '''The player-controlled bucket to catch data points.'''
+    def __init__(self, screen_width, screen_height):
+        super().__init__()
         
