@@ -9,15 +9,12 @@ GAME_PATH = os.path.dirname(os.path.abspath(__file__))
 def get_asset_path(filename:str) -> str:
     return os.path.join(GAME_PATH,"assets", filename)
 
-#Initializing Pygame
+# Initialize Pygame
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
+WIDTH, HEIGHT = 1280, 720
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Bell Curve Catcher")
 clock = pygame.time.Clock()
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
-# screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
-
 
 
 #Colors
@@ -31,7 +28,7 @@ def main():
     font = pygame.font.SysFont("Arial", 36)
     # Groups
     points_group = pygame.sprite.Group()
-    player = Catcher()
+    player = Catcher(WIDTH, HEIGHT)
     player_group = pygame.sprite.GroupSingle(player)
 
     # Timer: Spawn every 800ms (slightly faster)
