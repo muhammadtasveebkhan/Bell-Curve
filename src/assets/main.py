@@ -39,12 +39,7 @@ def main():
     while running:
         screen.fill(WHITE)
 
-
-#         # 1. Draw the "Safe Zone" (The Bell Curve Area)
-#         # For now, let's represent the "Safe" center of the curve
-#         pygame.draw.rect(screen, GRAY, (200, 0, 400, SCREEN_HEIGHT))
-
-      # 1. Draw the "Bell Curve" Center (Safe Zone)
+        # 1. Draw the "Bell Curve" Center (Safe Zone)
         # 440 to 840 is the middle 400 pixels of a 1280 screen
         pygame.draw.rect(screen, GRAY, (440, 0, 400, HEIGHT))
 
@@ -54,6 +49,11 @@ def main():
             if event.type == SPAWN_EVENT:
                 new_point = DataPoint(WIDTH)
                 points_group.add(new_point)
+
+                
+
+
+
 
 #         # 2. Update Points
 #         points.update()
