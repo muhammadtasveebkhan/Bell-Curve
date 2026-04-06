@@ -50,19 +50,21 @@ def main():
                 new_point = DataPoint(WIDTH)
                 points_group.add(new_point)
 
-                
+        # 2. Update
+        points_group.update()
+        player_group.update()
+
+        # 3. Collision Logic
+        hits = pygame.sprite.spritecollide(player, points_group, True)
+        for hit in hits:
+            if not hit.is_outlier:
+                score += 10
+            else:
+                score -= 20 # Outliers hurt more!
+        
+                        
 
 
-
-
-#         # 2. Update Points
-#         points.update()
-
-#         # # 3. Game Logic: Catching points
-#         for point in points:
-#         #     # If player clicks the point 
-#         #     # The twist logic goes here
-#             pass
 
 #         points.draw(screen)
         pygame.display.flip()
