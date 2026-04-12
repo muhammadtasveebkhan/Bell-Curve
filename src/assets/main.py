@@ -1,3 +1,10 @@
+"""
+Bell Curve Catcher - Main Entry Point
+Author: Muhammad Khan
+Date: April 2026
+Description: This script handles the Pygame initialization, the main game loop,
+and collision logic for the Bell Curve Catcher project.
+"""
 import pygame
 import os 
 import random
@@ -57,7 +64,7 @@ def main():
             if event.type == SPAWN_EVENT:
                 new_point = DataPoint(WIDTH)
                 points_group.add(new_point)
-                
+
         # 2. Update
         points_group.update()
         player_group.update()
