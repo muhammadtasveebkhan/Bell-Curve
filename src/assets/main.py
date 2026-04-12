@@ -44,12 +44,20 @@ def main():
         pygame.draw.rect(screen, GRAY, (440, 0, 400, HEIGHT))
 
         for event in pygame.event.get():
+            # Standard quit event (clicking the close button)
             if event.type == pygame.QUIT:
                 running = False
+            
+            # Keydown events (detecting when a key is pressed once)
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    running = False
+            
+            # Timer event for spawning points
             if event.type == SPAWN_EVENT:
                 new_point = DataPoint(WIDTH)
                 points_group.add(new_point)
-
+                
         # 2. Update
         points_group.update()
         player_group.update()
