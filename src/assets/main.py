@@ -30,6 +30,7 @@ BLACK = (0, 0, 0)
 GRAY = (200, 200, 200)
 
 def main():
+    """Sets up game groups, timers, and handles the primary game loop."""
     running = True
     score = 0
     font = pygame.font.SysFont("Arial", 36)
