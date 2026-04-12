@@ -4,6 +4,7 @@ import random
 class DataPoint(pygame.sprite.Sprite):
     '''Represents the falling data points (Green = Good, Red = Outlier).'''
     def __init__(self, screen_width):
+        """Initializes a data point with a random position and outlier status."""
         super().__init__()
         # Logic: 30% chance to be an outlier 
         self.is_outlier = random.random() > 0.7 
