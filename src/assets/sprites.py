@@ -29,6 +29,7 @@ class DataPoint(pygame.sprite.Sprite):
 class Catcher(pygame.sprite.Sprite):
     '''The player-controlled bucket to catch data points.'''
     def __init__(self, screen_width, screen_height):
+        """Initializes the player bucket with movement speed and boundaries."""
         super().__init__()
         self.image = pygame.Surface((100, 40))
         self.image.fill((0, 0, 255)) # Blue Bucket
